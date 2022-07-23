@@ -1,48 +1,48 @@
-function chooseBublasaur(details) {
+function chooseBulbasaur(details) {
     let bulbasaur_json = JSON.stringify(bulbasaur);
-    cookies.set(`playerSelection`, bulbasaur_json);
-    cookies.set(`playerHealth`, bulbasaur[`health`]);
-    cookies.set(`playerSelection`, bulbasaur[`attack`]);
+    Cookies.set(`playerSelection`, bulbasaur_json);
+    Cookies.set(`playerHealth`, bulbasaur[`health`]);
+    Cookies.set(`playerAttack`, bulbasaur[`attack`]);
     
     let foe_json = JSON.stringify(meowth);
-    cookies.set(`foeSelection`, foe_json);
-    cookies.set(`foeHealth`,meowth[`health`]);
+    Cookies.set(`foeSelection`, foe_json);
+    Cookies.set(`foeHealth`,meowth[`health`]);
     location.href = `fight.html`;
 }
 
 function chooseMagikarp(details) {
     let magikarp_json = JSON.stringify(magikarp);
-    cookies.set(`playerSelection`, magikarp_json);
-    cookies.set(`playerHealth`, magikarp[`health`]);
-    cookies.set(`playerSelection`, magikarp[`attack`]);
+    Cookies.set(`playerSelection`, magikarp_json);
+    Cookies.set(`playerHealth`, magikarp[`health`]);
+    Cookies.set(`playerAttack`, magikarp[`attack`]);
     
     let foe_json = JSON.stringify(meowth);
-    cookies.set(`foeSelection`, foe_json);
-    cookies.set(`foeHealth`,meowth[`health`]);
+    Cookies.set(`foeSelection`, foe_json);
+    Cookies.set(`foeHealth`,meowth[`health`]);
     location.href = `fight.html`;
 }
 
 function chooseMeowth(details) {
     let meowth_json = JSON.stringify(meowth);
-    cookies.set(`playerSelection`, meowth_json);
-    cookies.set(`playerHealth`, meowth[`health`]);
-    cookies.set(`playerSelection`, meowth[`attack`]);
+    Cookies.set(`playerSelection`, meowth_json);
+    Cookies.set(`playerHealth`, meowth[`health`]);
+    Cookies.set(`playerAttack`, meowth[`attack`]);
     
     let foe_json = JSON.stringify(meowth);
-    cookies.set(`foeSelection`, foe_json);
-    cookies.set(`foeHealth`,meowth[`health`]);
+    Cookies.set(`foeSelection`, foe_json);
+    Cookies.set(`foeHealth`,meowth[`health`]);
     location.href = `fight.html`;
 }
 
 function choosePalkia(details) {
     let palkia_json = JSON.stringify(palkia);
-    cookies.set(`playerSelection`, palkia_json);
-    cookies.set(`playerHealth`, palkia[`health`]);
-    cookies.set(`playerSelection`, palkia[`attack`]);
+    Cookies.set(`playerSelection`, palkia_json);
+    Cookies.set(`playerHealth`, palkia[`health`]);
+    Cookies.set(`playerAttack`, palkia[`attack`]);
     
     let foe_json = JSON.stringify(meowth);
-    cookies.set(`foeSelection`, foe_json);
-    cookies.set(`foeHealth`,meowth[`health`]);
+    Cookies.set(`foeSelection`, foe_json);
+    Cookies.set(`foeHealth`,meowth[`health`]);
     location.href = `fight.html`;
 }
 
@@ -79,7 +79,7 @@ let palkia = {
 };
 
 let bulbasaurButton = document.getElementById(`bulbasaurButton`);
-bulbasaurButton.addEventListener(`click`, chooseBublasaur)
+bulbasaurButton.addEventListener(`click`, chooseBulbasaur)
 
 let magikarpButton = document.getElementById(`magikarpButton`);
 magikarpButton.addEventListener(`click`, chooseMagikarp)
