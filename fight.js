@@ -1,4 +1,4 @@
-function attackButton(details){
+function attack(details){
     foeHealth = foeHealth - 23
     Cookies.set(`foeHealth`, foeHealth);
 
@@ -10,6 +10,16 @@ function attackButton(details){
 
     let foeDisplay = document.getElementById(`displayHP2`);
     foeDisplay[`innerHTML`] = foeHealth;
+if(foeHealth <= 0){
+    foeDisplay[`innerHTML`] = `<h1>ENJOY YOUR WINNINGS!</h1>`;
+    playerDisplay[`innerHTML`] = `<h1>CONGRATS YOU WON!</h1>`;
+}
+
+if(playerHealth <= 0){
+    foeDisplay[`innerHTML`] = `<h1>I dont know how you lost... the game was rigged for you to win... THANKS FOR THE MONEY (V) (;,,;) (V)</h1></h1>`;
+    playerDisplay[`innerHTML`] = `<h1>I dont know how you lost... the game was rigged for you to win... THANKS FOR THE MONEY (V) (;,,;) (V)</h1>`;
+}
+    
 }
 
 let playerPokemon_json = Cookies.get(`playerSelection`);
@@ -44,4 +54,5 @@ battleGrounds.insertAdjacentHTML(`afterbegin`,
 );
 
 let buttonOne = document.getElementById(`buttonOne`);
-buttonOne.addEventListener(`click`, attackButton)
+buttonOne.addEventListener(`click`, attack)
+
