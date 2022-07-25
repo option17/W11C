@@ -60,7 +60,7 @@ let bulbasaur = {
 let magikarp = {
     name: `magikarp`,
     image_url: `<img src="https://c.tenor.com/PwnLxYiXYtwAAAAM/pokemon-magikarp.gif"`,
-    health: 100,
+    health: 150,
     attack: `Splash`
 };
 
